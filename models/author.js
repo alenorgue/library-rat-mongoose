@@ -5,7 +5,7 @@ const authorSchema = new mongoose.Schema({
     familyName: String,
     dateBirth: Date,
     dateDeath: Date
-})
+}, { collection: 'authors' }); 
 
 const Author = new mongoose.model('Authors', authorSchema);
 module.exports = Author;
